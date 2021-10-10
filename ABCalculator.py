@@ -17,6 +17,10 @@ def popup_window():
 root = tk.Tk()
 root.geometry("280x300")
 root.title("A/B калькулятор")
+frame1 = tk.Frame(master=root, width=260, height=142, bg="#87CEFA", relief=tk.GROOVE, borderwidth=3)
+frame1.pack()
+frame2 = tk.Frame(master=root, width=260, height=143, bg="#98FB98", relief=tk.GROOVE, borderwidth=3)
+frame2.pack()
 
 #Добавление метки заголовка
 lblTitle = tk.Label(text = "A/B калькулятор", font = ('Helvetica', 16, 'bold'), fg = '#0000cc')
