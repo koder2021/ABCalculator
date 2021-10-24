@@ -34,6 +34,8 @@ def popup_window(n1, c1, n2, c2):
     window = tk.Toplevel()
     window.geometry("500x500")
     window.title("A/B результат")
+    frame3 = tk.Frame(master=window, width=480, height=440, bg="#00FFFF", relief=tk.GROOVE, borderwidth=3)
+    frame3.pack()
     
     #Добавление окна вывода текста
     txtOutput = tk.Text(window,font = ('Courier New', 10, 'bold'))
@@ -110,7 +112,7 @@ def popup_window(n1, c1, n2, c2):
     
     #Добавление оценки результатов
     confidence_95 = False
-    if p_value < 0.025 or p_value > 0.995:
+    if p_value < 0.025 or p_value > 0.975:
         confidence_95 = True
         
     confidence_99 = False
