@@ -117,7 +117,7 @@ def popup_window(n1, c1, n2, c2):
         
     confidence_99 = False
     if p_value < 0.005 or p_value > 0.995:
-        confidence_95 = True
+        confidence_99 = True
         
     lblComment95 = tk.Label(window, text = "95% уверенность:", font = ('Helvetica', 10, 'bold'))
     lblComment95.place(x=25, y=25)
